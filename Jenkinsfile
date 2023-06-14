@@ -1,10 +1,6 @@
 pipeline {
 
-  agent {
-    node {
-     lable 'workstation'
-    }
-  }
+  agent any
 
   stages {
 
@@ -15,4 +11,6 @@ pipeline {
     }
   }
 }
+
+
 
