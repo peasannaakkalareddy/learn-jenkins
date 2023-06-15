@@ -2,7 +2,7 @@ pipeline {
 
   agent {
     node {
-      lable 'workstation'
+      label 'workstation'
     }
   }
 
