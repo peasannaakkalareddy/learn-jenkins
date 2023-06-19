@@ -33,6 +33,12 @@ pipeline {
         sh 'echo PERSON - ${PERSON}'
       }
     }
+
+    stage( 'Two' ){
+      Steps{
+        sh 'env'
+      }
+    }
   }
   post {
     always {
