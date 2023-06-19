@@ -24,7 +24,7 @@ pipeline {
         sh 'echo Hello World'
         sh 'echo Hello Universe'
         sh 'echo ${SAMPLE_URL}'
-        sh 'echo PERSON - ${person}'
+        sh 'echo PERSON - ${PERSON}'
       }
     }
   }
