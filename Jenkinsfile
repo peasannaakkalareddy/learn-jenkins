@@ -35,12 +35,17 @@ pipeline {
     }
 
     stage('Two') {
-      steps {
-        sh 'env'
+    when {
+      expression{
+        GIT_BRANCH == "origin/test"
       }
     }
-
+    steps {
+      sh 'env'
+    }
   }
+
+ }
   post {
     always {
       sh 'echo cleanup steps'
