@@ -6,6 +6,10 @@ pipeline {
     }
   }
 
+   options {
+          ansiColor('xterm')
+      }
+
   environment {
     SAMPLE_URL="example.com"
   }
