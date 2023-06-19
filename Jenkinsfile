@@ -56,23 +56,27 @@
 //
 //
 
+
 pipeline {
   agent any
   stages {
-    parallel {
-      stage('one') {
-        steps {
-          sh 'echo one'
+    stage('parallel') {
+      parallel {
+
+        stage('one') {
+          steps {
+            sh 'echo one'
+          }
         }
-      }
-      stage('two') {
-        steps {
-          sh 'echo two'
+        stage('two') {
+          steps {
+            sh 'echo two'
+          }
         }
-      }
-      stage('three'){
-        steps {
-          sh 'echo three'
+        stage('three') {
+          steps {
+            sh 'echo three'
+          }
         }
       }
     }
