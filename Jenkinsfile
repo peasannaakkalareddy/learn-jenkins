@@ -35,7 +35,7 @@ pipeline {
     }
 
 
-    stage('Two') {
+    stage('two') {
       Steps {
         sh 'env'
       }
