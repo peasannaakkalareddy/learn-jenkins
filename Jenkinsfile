@@ -21,7 +21,7 @@ pipeline {
 
   stages {
 
-    stage('one') {
+    stage('One') {
       input {
         message "Do you Approve?"
         ok "Yes"
@@ -34,7 +34,7 @@ pipeline {
       }
     }
 
-    stage('two') {
+    stage('Two') {
       Steps {
         sh 'env'
       }
